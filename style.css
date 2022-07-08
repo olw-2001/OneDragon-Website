@@ -93,24 +93,28 @@ nav ul li a:hover {
 }
 
 .fancy-boxes {
-    margin-left: 90%;
     margin-top: -40px;
     position: absolute;
     background-color: #a80000;
-    width: 50px;
+    width: 0px;
     height: 40px;
+    right: 110px;
+    animation: slidein 0.3s ease-in-out 0.6s forwards;
 }
 .i {
     margin-top: -80px;
     background-color: #707070;
+    animation: slidein 0.3s ease-in-out 0.7s forwards;
 }
 .ii {
     margin-top: -120px;
     background-color: #1f1f1f;
+    animation: slidein 0.3s ease-in-out 0.8s forwards;
 }
 .iii {
     margin-top: -160px;
     background-color: #731010;
+    animation: slidein 0.3s ease-in-out 0.9s forwards;
 }
 
 .contact-button {
@@ -157,6 +161,15 @@ nav ul li a:hover {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 50px;
     }
 }
 
